@@ -1,0 +1,398 @@
+
+*** Running vivado
+    with args -log design_1_AXI_peak_finder_final_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AXI_peak_finder_final_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_AXI_peak_finder_final_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1003.980 ; gain = 120.328
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Robot/MastersSafeKeeping/Custom_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:peak_finder:1.0'. The one found in IP location 'c:/Users/Robot/MastersSafeKeeping/Custom_IP/peak_finder_1_0' will take precedence over the same IP in location c:/Users/Robot/MastersSafeKeeping/Custom_IP/xilinx.com_user_peak_finder_1.0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_AXI_peak_finder_final_0_0
+Command: synth_design -top design_1_AXI_peak_finder_final_0_0 -part xczu5eg-sfvc784-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16392
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'dina', assumed default net type 'wire' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0.v:93]
+INFO: [Synth 8-11241] undeclared symbol 'doutb', assumed default net type 'wire' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0.v:100]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2387.176 ; gain = 332.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_AXI_peak_finder_final_0_0' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ip/design_1_AXI_peak_finder_final_0_0/synth/design_1_AXI_peak_finder_final_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'AXI_peak_finder_final_v1_0' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AXI_peak_finder_final_v1_0_S00_AXI' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'peak_finder_fp' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fp_gt' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/fp_gt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_0' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ip/design_1_AXI_peak_finder_final_0_0/src/floating_point_0/synth/floating_point_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [E:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [E:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_0' (0#1) [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ip/design_1_AXI_peak_finder_final_0_0/src/floating_point_0/synth/floating_point_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'fp_gt' (0#1) [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/fp_gt.v:1]
+WARNING: [Synth 8-7071] port 'ready' of module 'fp_gt' is unconnected for instance 'cmp1' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:81]
+WARNING: [Synth 8-7023] instance 'cmp1' of module 'fp_gt' has 7 connections declared, but only 6 given [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:81]
+WARNING: [Synth 8-7071] port 'ready' of module 'fp_gt' is unconnected for instance 'cmp2' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:82]
+WARNING: [Synth 8-7023] instance 'cmp2' of module 'fp_gt' has 7 connections declared, but only 6 given [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:82]
+WARNING: [Synth 8-7071] port 'ready' of module 'fp_gt' is unconnected for instance 'cmp3' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:83]
+WARNING: [Synth 8-7023] instance 'cmp3' of module 'fp_gt' has 7 connections declared, but only 6 given [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'peak_finder_fp' (0#1) [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:1]
+WARNING: [Synth 8-7071] port 's_axis_tvalid' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 's_axis_tdata' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'm_axis_tvalid' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'm_axis_tready' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'm_axis_tdata' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'clkIN' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'wea' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'dina' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7071] port 'doutb' of module 'peak_finder_fp' is unconnected for instance 'peak_inst' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+WARNING: [Synth 8-7023] instance 'peak_inst' of module 'peak_finder_fp' has 22 connections declared, but only 11 given [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:146]
+INFO: [Synth 8-226] default block is never used [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:272]
+INFO: [Synth 8-226] default block is never used [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:413]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_peak_finder_final_v1_0_S00_AXI' (0#1) [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'dina' does not match port width (32) of module 'AXI_peak_finder_final_v1_0_S00_AXI' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_peak_finder_final_v1_0' (0#1) [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AXI_peak_finder_final_0_0' (0#1) [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ip/design_1_AXI_peak_finder_final_0_0/synth/design_1_AXI_peak_finder_final_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element peak_value_reg was removed.  [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:223]
+WARNING: [Synth 8-3848] Net dina in module/entity peak_finder_fp does not have driver. [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/src/peak_finder_fp.v:29]
+WARNING: [Synth 8-3848] Net clkIN in module/entity AXI_peak_finder_final_v1_0_S00_AXI does not have driver. [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:20]
+WARNING: [Synth 8-3848] Net wea in module/entity AXI_peak_finder_final_v1_0_S00_AXI does not have driver. [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:22]
+WARNING: [Synth 8-3848] Net dina in module/entity AXI_peak_finder_final_v1_0_S00_AXI does not have driver. [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:26]
+WARNING: [Synth 8-3848] Net doutb in module/entity AXI_peak_finder_final_v1_0 does not have driver. [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0.v:100]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[14] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[13] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[12] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[11] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[10] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[9] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[8] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[7] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[6] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[5] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[4] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[3] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[2] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[1] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[9] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[8] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[7] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[6] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[5] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[4] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[3] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[2] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[1] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module carry_chain__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_ne_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[1] in module carry_chain is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module carry_chain is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module axi_slave_2to1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module axi_slave_2to1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module axi_slave_2to1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module axi_slave_2to1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[15] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[14] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[13] in module floating_point_v7_1_15_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2554.547 ; gain = 499.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2572.441 ; gain = 517.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2572.441 ; gain = 517.383
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2584.500 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.runs/design_1_AXI_peak_finder_final_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.runs/design_1_AXI_peak_finder_final_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2693.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  FDE => FDRE: 15 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2693.773 ; gain = 0.047
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2693.773 ; gain = 638.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2693.773 ; gain = 638.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/AXI_peak_finder_final_v1_0_S00_AXI_inst/peak_inst/cmp1/your_fp_gt_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/AXI_peak_finder_final_v1_0_S00_AXI_inst/peak_inst/cmp2/your_fp_gt_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/AXI_peak_finder_final_v1_0_S00_AXI_inst/peak_inst/cmp3/your_fp_gt_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2693.773 ; gain = 638.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'peak_finder_fp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000000001 |                             0000
+                  FETCH1 |                       0000000010 |                             0001
+                  FETCH2 |                       0000000100 |                             0010
+                  FETCH3 |                       0000001000 |                             0011
+                WAIT_CMP |                       0000010000 |                             0100
+                     CMP |                       0000100000 |                             0101
+                  STORE1 |                       0001000000 |                             0110
+                  STORE2 |                       0010000000 |                             0111
+                    NEXT |                       0100000000 |                             1000
+                  FINISH |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'peak_finder_fp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2693.773 ; gain = 638.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'floating_point_0:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'floating_point_0:/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'floating_point_0:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'floating_point_0:/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'floating_point_0:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'floating_point_0:/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'floating_point_0:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'floating_point_0:/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_AXI_peak_finder_final_0_0 has port addrb[6] driven by constant 0
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'inst/AXI_peak_finder_final_v1_0_S00_AXI_inst/slv_reg2_reg[0]/Q' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:266]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:266]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.gen/sources_1/bd/design_1/ipshared/eace/hdl/AXI_peak_finder_final_v1_0_S00_AXI.v:266]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2693.773 ; gain = 638.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3059.113 ; gain = 1004.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3060.758 ; gain = 1005.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     2|
+|2     |LUT1   |     4|
+|3     |LUT2   |   142|
+|4     |LUT3   |   216|
+|5     |LUT4   |   148|
+|6     |LUT5   |    80|
+|7     |LUT6   |   126|
+|8     |MUXCY  |   126|
+|9     |FDE    |    15|
+|10    |FDRE   |   777|
+|11    |FDSE   |    11|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 61 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 3089.891 ; gain = 913.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 3089.891 ; gain = 1034.832
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 3089.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3130.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  (CARRY4) => CARRY8: 21 instances
+  FDE => FDRE: 15 instances
+
+Synth Design complete, checksum: 8c3e9a21
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 127 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 3130.043 ; gain = 2051.879
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.runs/design_1_AXI_peak_finder_final_0_0_synth_1/design_1_AXI_peak_finder_final_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 84 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robot/MastersSafeKeeping/FINAL/FINAL.runs/design_1_AXI_peak_finder_final_0_0_synth_1/design_1_AXI_peak_finder_final_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_AXI_peak_finder_final_0_0_utilization_synth.rpt -pb design_1_AXI_peak_finder_final_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  6 00:29:59 2025...

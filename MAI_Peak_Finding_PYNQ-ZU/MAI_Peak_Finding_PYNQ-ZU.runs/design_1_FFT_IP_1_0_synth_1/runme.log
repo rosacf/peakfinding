@@ -1,0 +1,835 @@
+
+*** Running vivado
+    with args -log design_1_FFT_IP_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FFT_IP_1_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_FFT_IP_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1001.578 ; gain = 117.656
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Robot/MastersSafeKeeping/Custom_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_FFT_IP_1_0
+Command: synth_design -top design_1_FFT_IP_1_0 -part xczu5eg-sfvc784-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14400
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2385.293 ; gain = 333.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_FFT_IP_1_0' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ip/design_1_FFT_IP_1_0/synth/design_1_FFT_IP_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_f_M_value_RAM_AUTO_1R1W' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_f_M_value_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_f_M_value_RAM_AUTO_1R1W' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_f_M_value_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_FFT_IP_Pipeline_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_FFT_IP_Pipeline_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_flow_control_loop_pipe_sequential_init' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_FFT_IP_Pipeline_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_FFT_IP_Pipeline_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_97_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_97_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_97_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_97_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform_Pipeline_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform_Pipeline_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform_Pipeline_4' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform_Pipeline_4' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_s' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K0_V_ROM_1P_LUTRAM_1R' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K0_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K0_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K0_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K0_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K0_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K1_V_ROM_1P_LUTRAM_1R' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K1_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K1_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K1_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K1_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K1_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K2_V_ROM_1P_LUTRAM_1R' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K2_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K2_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K2_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K2_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K2_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K3_V_ROM_1P_LUTRAM_1R' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K3_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K3_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K3_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K3_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K3_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K4_V_ROM_1P_LUTRAM_1R' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K4_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K4_V_ROM_1P_LUTRAM_1R.dat' is read successfully [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K4_V_ROM_1P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K4_V_ROM_1P_LUTRAM_1R' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s_fourth_order_double_sin_cos_K4_V_ROM_1P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_Pipeline_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_Pipeline_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_Pipeline_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_Pipeline_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_Pipeline_2' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_Pipeline_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_mux_42_32_1_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mux_42_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_mux_42_32_1_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mux_42_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_Pipeline_2' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_Pipeline_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_sin_or_cos_double_Pipeline_3' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_Pipeline_3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_Pipeline_3' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_Pipeline_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_mul_52s_54ns_105_5_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_52s_54ns_105_5_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_mul_52s_54ns_105_5_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_52s_54ns_105_5_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_mul_44s_44ns_87_3_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_44s_44ns_87_3_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_mul_44s_44ns_87_3_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_44s_44ns_87_3_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_mul_33ns_34ns_66_3_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_33ns_34ns_66_3_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_mul_33ns_34ns_66_3_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_33ns_34ns_66_3_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_mul_64s_64s_126_5_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_mul_64s_64s_126_5_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_sin_or_cos_double_s' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_sin_or_cos_double_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform_Pipeline_VITIS_LOOP_44_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_44_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform_Pipeline_VITIS_LOOP_44_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_44_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform_Pipeline_VITIS_LOOP_47_2' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_47_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform_Pipeline_VITIS_LOOP_47_2' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_47_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_mul_32s_32s_32_3_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_32s_32s_32_3_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_mul_32s_32s_32_3_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_32s_32s_32_3_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_mul_13ns_32s_32_3_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_13ns_32s_32_3_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_mul_13ns_32s_32_3_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_13ns_32s_32_3_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_srem_32ns_32ns_32_36_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:74]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_srem_32ns_32ns_32_36_1_divider' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_srem_32ns_32ns_32_36_1_divider' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_srem_32ns_32ns_32_36_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_transform_Pipeline_5' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_5.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform_Pipeline_5' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_5.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_fptrunc_64ns_32_3_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [E:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [E:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_fptrunc_64ns_32_3_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_transform' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_112_3' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_112_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/ip/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_112_3' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_112_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_IP_BUS_A_s_axi' [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_BUS_A_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_BUS_A_s_axi.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP_BUS_A_s_axi' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_BUS_A_s_axi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_IP' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FFT_IP_1_0' (0#1) [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ip/design_1_FFT_IP_1_0/synth/design_1_FFT_IP_1_0.v:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_reg_514_pp0_iter2_reg_reg' and it is trimmed from '14' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_44_1.v:250]
+WARNING: [Synth 8-6014] Unused sequential element loop[31].divisor_tmp_reg[32] was removed.  [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:57]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:136]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_BUS_A_s_axi.v:250]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized105 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized105 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized105 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized46 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized46 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized46 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized103 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized101 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized40 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized40 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized40 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized40 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized40 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_dsp_opt_full is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized78 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized78 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized78 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized93 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized93 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized93 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized89 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 2630.973 ; gain = 578.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 2630.973 ; gain = 578.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 2630.973 ; gain = 578.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2630.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ip/design_1_FFT_IP_1_0/constraints/FFT_IP_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2688.035 ; gain = 4.035
+Finished Parsing XDC File [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ip/design_1_FFT_IP_1_0/constraints/FFT_IP_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Robot/MastersSafeKeeping/full_design/full_design.runs/design_1_FFT_IP_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Robot/MastersSafeKeeping/full_design/full_design.runs/design_1_FFT_IP_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2688.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 16 instances
+  FDE => FDRE: 28 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2688.102 ; gain = 0.066
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:29 ; elapsed = 00:01:56 . Memory (MB): peak = 2688.102 ; gain = 636.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:29 ; elapsed = 00:01:56 . Memory (MB): peak = 2688.102 ; gain = 636.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/Robot/MastersSafeKeeping/full_design/full_design.runs/design_1_FFT_IP_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:56 . Memory (MB): peak = 2688.102 ; gain = 636.078
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'h_cast_reg_130_reg' and it is trimmed from '14' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_FFT_IP_Pipeline_VITIS_LOOP_97_1.v:156]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_reg_514_pp0_iter1_reg_reg' and it is trimmed from '14' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_44_1.v:243]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_reg_514_reg' and it is trimmed from '14' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_44_1.v:242]
+WARNING: [Synth 8-3936] Found unconnected internal register 'j_cast_reg_133_reg' and it is trimmed from '14' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_47_2.v:158]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[30].remd_tmp_reg[31]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[29].remd_tmp_reg[30]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[28].remd_tmp_reg[29]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[27].remd_tmp_reg[28]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[26].remd_tmp_reg[27]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[25].remd_tmp_reg[26]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[24].remd_tmp_reg[25]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[23].remd_tmp_reg[24]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[22].remd_tmp_reg[23]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[21].remd_tmp_reg[22]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[20].remd_tmp_reg[21]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[19].remd_tmp_reg[20]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[18].remd_tmp_reg[19]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[17].remd_tmp_reg[18]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[16].remd_tmp_reg[17]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[15].remd_tmp_reg[16]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[14].remd_tmp_reg[15]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[13].remd_tmp_reg[14]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[12].remd_tmp_reg[13]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[11].remd_tmp_reg[12]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[10].remd_tmp_reg[11]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[9].remd_tmp_reg[10]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[8].remd_tmp_reg[9]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[7].remd_tmp_reg[8]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[6].remd_tmp_reg[7]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[5].remd_tmp_reg[6]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[4].remd_tmp_reg[5]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '32' to '31' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'srem_ln70_reg_533_reg' and it is trimmed from '32' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.v:728]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln63_reg_471_pp0_iter1_reg_reg' and it is trimmed from '14' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.v:659]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'FFT_IP_BUS_A_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'FFT_IP_BUS_A_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "FFT_IP_f_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "FFT_IP_f_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "FFT_IP_f_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "FFT_IP_f_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-3971] The signal "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'FFT_IP_BUS_A_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'FFT_IP_BUS_A_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:38 ; elapsed = 00:02:08 . Memory (MB): peak = 2688.102 ; gain = 636.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized3) to 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_DELAY' (delay__parameterized3) to 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'FFT_IP_fptrunc_64ns_32_3_no_dsp_1:/FFT_IP_fptrunc_64ns_32_3_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1:/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1:/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1:/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1:/FFT_IP_faddfsub_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1:/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1:/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1:/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1:/FFT_IP_fmul_32ns_32ns_32_7_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized3) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized3) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized2) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized2) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'inst/grp_FFT_IP_Pipeline_VITIS_LOOP_112_3_fu_116/fsqrt_32ns_32ns_32_28_no_dsp_1_U103/FFT_IP_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+Why this net has no driver: _order_recur <const1>
+Why this net has no driver: _order_recur <const1>
+WARNING: [Synth 8-6014] Unused sequential element mul_44s_44ns_87_3_1_U42/buff0_reg was removed.  [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_44s_44ns_87_3_1.v:27]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_64s_64s_126_5_1_U44/buff1_reg' and it is trimmed from '48' to '24' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_64s_64s_126_5_1_U44/buff0_reg' and it is trimmed from '48' to '24' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_64s_64s_126_5_1_U44/buff1_reg' and it is trimmed from '48' to '41' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_64s_64s_126_5_1_U44/buff1_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_64s_64s_126_5_1_U44/buff1_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_64s_64s_126_5_1_U44/buff1_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_64s_64s_126_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_44s_44ns_87_3_1_U42/buff0_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_44s_44ns_87_3_1.v:27]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_44s_44ns_87_3_1_U42/buff0_reg' and it is trimmed from '48' to '36' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_44s_44ns_87_3_1.v:27]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_33ns_34ns_66_3_1_U43/buff0_reg' and it is trimmed from '48' to '32' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_33ns_34ns_66_3_1.v:27]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_33ns_34ns_66_3_1_U43/buff0_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_33ns_34ns_66_3_1.v:27]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_52s_54ns_105_5_1_U41/buff1_reg' and it is trimmed from '48' to '37' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_52s_54ns_105_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_52s_54ns_105_5_1_U41/buff1_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_52s_54ns_105_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_52s_54ns_105_5_1_U41/buff0_reg' and it is trimmed from '48' to '37' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_52s_54ns_105_5_1.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_52s_54ns_105_5_1_U41/buff1_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_52s_54ns_105_5_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_44s_44ns_87_3_1_U42/buff0_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_44s_44ns_87_3_1.v:27]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_33ns_34ns_66_3_1_U43/buff0_reg' and it is trimmed from '48' to '17' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_mul_33ns_34ns_66_3_1.v:27]
+DSP Debug: swapped A/B pins for adder 0000011221317CD0
+DSP Debug: swapped A/B pins for adder 0000011222AF0960
+DSP Debug: swapped A/B pins for adder 0000011221324990
+DSP Debug: swapped A/B pins for adder 0000011210336030
+DSP Debug: swapped A/B pins for adder 000001121CE4B800
+DSP Debug: swapped A/B pins for adder 00000112199DCDC0
+DSP Debug: swapped A/B pins for adder 00000112199D8380
+DSP Debug: swapped A/B pins for adder 00000112199DFD00
+DSP Debug: swapped A/B pins for adder 00000112199E2B20
+DSP Debug: swapped A/B pins for adder 00000112199E3120
+DSP Debug: swapped A/B pins for adder 00000111BF026850
+DSP Debug: swapped A/B pins for adder 00000111BF027330
+DSP Debug: swapped A/B pins for adder 00000111BF02D750
+WARNING: [Synth 8-3936] Found unconnected internal register 'srem_32ns_32ns_32_36_1_U77/remd_reg' and it is trimmed from '32' to '13' bits. [c:/Users/Robot/MastersSafeKeeping/full_design/full_design.gen/sources_1/bd/design_1/ipshared/4228/hdl/verilog/FFT_IP_srem_32ns_32ns_32_36_1.v:146]
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-3971] The signal "FFT_IP_transform_f2_M_value_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[16]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[15]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[14]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[13]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[12]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[11]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[10]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[9]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[8]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[7]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[6]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[5]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[4]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[3]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[2]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[1]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_52s_54ns_105_5_1_U41/buff1_reg[0]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[15]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[14]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[13]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[12]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[11]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[10]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[9]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[8]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[7]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[6]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[5]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[4]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[3]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[2]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[1]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_44s_44ns_87_3_1_U42/buff0_reg[0]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[15]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[14]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[13]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[12]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[11]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[10]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[9]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[8]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[7]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[6]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[5]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[4]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[3]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[2]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[1]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_33ns_34ns_66_3_1_U43/buff0_reg[0]__0) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[16]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[15]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[14]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[13]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[12]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[11]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[10]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[9]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[8]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[7]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[6]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[5]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[4]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[3]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[2]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[1]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_64s_64s_126_5_1_U44/buff1_reg[0]__1) is unused and will be removed from module FFT_IP_sin_or_cos_double_s.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[47]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[46]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[45]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[44]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[43]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[42]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[41]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[40]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[39]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[38]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[37]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[36]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[35]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[34]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[33]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[32]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[31]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[30]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[29]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[28]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[27]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[26]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[25]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[24]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[23]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[22]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[21]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[20]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[19]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[18]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_13ns_32s_32_3_1_U76/buff0_reg[17]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_3_1_U74/buff0_reg[47]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_3_1_U74/buff0_reg[46]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_3_1_U74/buff0_reg[45]) is unused and will be removed from module FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:45 ; elapsed = 00:04:31 . Memory (MB): peak = 2723.637 ; gain = 671.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:02 ; elapsed = 00:04:49 . Memory (MB): peak = 3188.125 ; gain = 1136.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "inst/f_M_value_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/f_M_value_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/f_M_value_1_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/f_M_value_1_U/ram_reg"
+INFO: [Synth 8-5582] The block RAM "inst/grp_transform_fu_100/f2_M_value_U/ram_reg" originally mapped as a shallow cascade chain, is remapped into deep block RAM for following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-3971] The signal "inst/grp_transform_fu_100/f2_M_value_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5582] The block RAM "inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg" originally mapped as a shallow cascade chain, is remapped into deep block RAM for following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-3971] The signal "inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5556] The block RAM "inst/grp_transform_fu_100/W_M_value_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "inst/grp_transform_fu_100/W_M_value_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/grp_transform_fu_100/W_M_value_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/grp_transform_fu_100/W_M_value_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/grp_transform_fu_100/W_M_value_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/grp_transform_fu_100/W_M_value_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5556] The block RAM "inst/grp_transform_fu_100/W_M_value_1_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "inst/grp_transform_fu_100/W_M_value_1_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/grp_transform_fu_100/W_M_value_1_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/grp_transform_fu_100/W_M_value_1_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/grp_transform_fu_100/W_M_value_1_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/grp_transform_fu_100/W_M_value_1_U/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:11 ; elapsed = 00:04:59 . Memory (MB): peak = 3284.090 ; gain = 1232.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_U/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_U/ram_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_1_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_1_U/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_1_U/ram_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/f_M_value_1_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/f2_M_value_1_U/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_U/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_U/ram_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_1_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_1_U/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_1_U/ram_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_transform_fu_100/W_M_value_1_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:20 ; elapsed = 00:05:07 . Memory (MB): peak = 3337.730 ; gain = 1285.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:28 ; elapsed = 00:05:17 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:28 ; elapsed = 00:05:17 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:32 ; elapsed = 00:05:21 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:32 ; elapsed = 00:05:21 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:32 ; elapsed = 00:05:21 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:33 ; elapsed = 00:05:21 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                               | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_421                                       | Dynamic              | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized0_357                       | (C+A'*B')'           | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_305                       | ((A*B)')'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized2_306                       | (PCIN>>17+(A'*B')')' | 0      | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized3_294                       | (PCIN+A:B+C')'       | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_246                       | ((A*B)')'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized2_247                       | (PCIN>>17+(A'*B')')' | 0      | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized3_235                       | (PCIN+A:B+C')'       | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper                                           | Dynamic              | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized0                           | (C+A'*B')'           | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_84                        | ((A*B)')'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized2_85                        | (PCIN>>17+(A'*B')')' | 0      | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized3_73                        | (PCIN+A:B+C')'       | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1                           | ((A*B)')'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized2                           | (PCIN>>17+(A'*B')')' | 0      | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized3                           | (PCIN+A:B+C')'       | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B'                 | 17     | 0      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 16     | 0      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B                  | 7      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 0      | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B                  | 30     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 0      | 9      | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (C+A*B)'             | 17     | 9      | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B                  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 0      | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 19     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A''*B)'        | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+(A*B'')')' | 19     | 18     | -      | -      | 37     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 19     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A''*B)'        | 17     | 17     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A''*B)')'     | 30     | 0      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A''*B)'             | 17     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A''*B)'    | 17     | 0      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A''*B)')'     | 17     | 0      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | ((A'*B)')'           | 30     | 12     | -      | -      | 24     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A''*B)'             | 17     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A*B')'     | 17     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A''*B)')'     | 17     | 12     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A''*B)'             | 17     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A*B')'     | 17     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 0      | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B')'              | 17     | 18     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A*B'')'        | 0      | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 0      | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 17     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A*B'')'        | 0      | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 0      | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 17     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A*B'')'    | 0      | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 0      | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B'                 | 17     | 0      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 16     | 0      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B                  | 4      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 0      | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B                  | 30     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 0      | 9      | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (C+A*B)'             | 17     | 9      | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | A*B                  | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+A*B)'      | 0      | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 19     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A''*B)'        | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN>>17+(A*B'')')' | 19     | 18     | -      | -      | 37     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 19     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A''*B)'        | 17     | 17     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A''*B)')'     | 30     | 0      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A''*B)'             | 17     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A''*B)'    | 17     | 0      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A''*B)')'     | 17     | 0      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | ((A'*B)')'           | 11     | 12     | -      | -      | 24     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A''*B)'             | 17     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A*B')'     | 17     | 11     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A''*B)')'     | 17     | 12     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A''*B)'             | 17     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A*B')'     | 17     | 11     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 0      | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B')'              | 17     | 11     | -      | -      | 0      | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A*B'')'        | 17     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 0      | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 17     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN+(A*B'')'        | 17     | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 0      | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | (A*B'')'             | 17     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_sin_or_cos_double_s                                | PCIN>>17+(A*B'')'    | 0      | 17     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FFT_IP_sin_or_cos_double_s                                | (PCIN+(A*B'')')'     | 17     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | A''*B''              | 17     | 13     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | (PCIN>>17+A''*B'')'  | 30     | 13     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | (A'*B')'             | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | A'*B'                | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | (PCIN>>17+A'*B')'    | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | (A''*B')'            | 17     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | A''*B''              | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|FFT_IP_transform_Pipeline_VITIS_LOOP_63_2_VITIS_LOOP_65_3 | (PCIN>>17+A''*B'')'  | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
++----------------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   331|
+|2     |DSP48E1         |    16|
+|3     |DSP_ALU         |    76|
+|5     |DSP_A_B_DATA    |    76|
+|18    |DSP_C_DATA      |    76|
+|20    |DSP_MULTIPLIER  |    76|
+|21    |DSP_M_DATA      |    76|
+|23    |DSP_OUTPUT      |    76|
+|25    |DSP_PREADD      |    76|
+|26    |DSP_PREADD_DATA |    76|
+|27    |LUT1            |   229|
+|28    |LUT2            |  1741|
+|29    |LUT3            |  2708|
+|30    |LUT4            |   746|
+|31    |LUT5            |   696|
+|32    |LUT6            |  1577|
+|33    |MUXCY           |   695|
+|34    |RAMB18E2        |     4|
+|36    |RAMB36E2        |    44|
+|48    |SRL16E          |    40|
+|49    |SRLC32E         |    57|
+|50    |XORCY           |   580|
+|51    |FDE             |    28|
+|52    |FDRE            |  8555|
+|53    |FDSE            |    20|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:33 ; elapsed = 00:05:21 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 847 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:17 ; elapsed = 00:04:49 . Memory (MB): peak = 3365.203 ; gain = 1256.051
+Synthesis Optimization Complete : Time (s): cpu = 00:04:33 ; elapsed = 00:05:22 . Memory (MB): peak = 3365.203 ; gain = 1313.180
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.422 . Memory (MB): peak = 3365.203 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1726 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3438.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 237 instances were transformed.
+  (CARRY4) => CARRY8: 117 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 16 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 76 instances
+  FDE => FDRE: 28 instances
+
+Synth Design complete, checksum: 46cce4d1
+INFO: [Common 17-83] Releasing license: Synthesis
+225 Infos, 260 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:56 ; elapsed = 00:06:01 . Memory (MB): peak = 3438.027 ; gain = 2362.035
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robot/MastersSafeKeeping/full_design/full_design.runs/design_1_FFT_IP_1_0_synth_1/design_1_FFT_IP_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_FFT_IP_1_0, cache-ID = 4ecb63c6b588b90d
+INFO: [Coretcl 2-1174] Renamed 732 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robot/MastersSafeKeeping/full_design/full_design.runs/design_1_FFT_IP_1_0_synth_1/design_1_FFT_IP_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_FFT_IP_1_0_utilization_synth.rpt -pb design_1_FFT_IP_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 23:36:25 2025...
